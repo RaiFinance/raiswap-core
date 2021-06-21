@@ -1,0 +1,27 @@
+{
+  "name": "raiswap-core",
+  "version": "0.1.0",
+  "description": "Raiswap contract on EVM",
+  "repository": "https://github.com/Basis-Cash/basiscash-protocol",
+  "license": "MIT",
+  "scripts": {
+    "test": "truffle test",
+    "compile": "truffle compile",
+    "flatten": "truffle-flattener",
+    "console:dev": "truffle console --network dev",
+    "deploy:dev": "truffle migrate --reset --network dev",
+    "deploy:ropsten": "truffle migrate --network ropsten",
+    "deploy:rinkeby": "truffle migrate --network rinkeby",
+    "deploy:mainnet": "truffle migrate --network mainnet"
+  },
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^1.1.0",
+    "truffle": "5.1.49",
+    "truffle-plugin-verify": "^0.5.4"
+  },
+  "dependencies": {
+    "bignumber.js": "^9.0.1",
+    "socks-proxy-agent": "^5.0.0",
+    "truffle-verify": "^1.0.8"
+  }
+}
